@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EUcalc</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link id="xd" rel="stylesheet" href="styles/style1.css">
+
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">
+            <h3 class="mb-0 ">Eu Nutrition Calculator</h3>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#regulations" class="nav-link">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#regulationsVol2" class="nav-link">Law stuff</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#formsPack" class="nav-link">Calculator</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
+        <div id="header" class="container text-white text-center">
+            <h1 class="display-1 animated bounceInUp">Eu Nutrition Validator</h1>
+            <p class="lead d-none d-md-block">You wanna export your food products to Europe? Check it first by our
+                nutrition validator!</p>
+
+        </div>
+    </section>
+    <section id="regulations" class="align-items-center">
+        <div id="regText" class="container text-justify mt-5">
+            <p>One of the main tasks facing the global food industry and grocery is to meet social expectations by
+                increasing the amount of
+                food nutrition information. Most companies in the European Union, including the trade partners outside
+                EU,
+                already provide nutrition information on food labels. This initiative goes beyond the requirements set
+                out in legal regulations and is getting manatory.</p>
+            <p>From a legal point of view, the primary function and regulation of all food law provisions on food
+                labeling is reliable information and consumer protection. Legal regulations in this area are very
+                complex and often ambiguous, which causes many difficulties for entities using them.
+
+                Mislabelling, presentation and advertising of foodstuffs are the most frequently identified
+                irregularities in the context of official food control carried out by national authorities. Penalties
+                for non-compliance with food labeling requirements can be extremely severe in some cases, which is why
+                it is worth ensuring that the applicable laws are properly applied.
+            </p><br>
+            <hr class="my-4">
+
+        </div>
+    </section>
+
+    <section id="regulationsVol2">
+        <div id="regTextVol2" class="container text-justify mt-5">
+            <h3>Legal basis</h3>
+            <p>A series of food incidents in late 1990s draw attention to the need to establish general principles and
+                requirements concerning food and feed law at Union level. Accordingly, the European Commission developed
+                an integrated approach to food safety 'from farm to table', primarily set out in its White Paper on Food
+                Safety. It covers all sectors of the food chain, including feed production, primary production, food
+                processing, storage, transport and retail sale.</p>
+
+            <p> In 2002, the European Parliament and the Council adopted Regulation (EC) No 178/2002 laying down the
+                general principles and requirements of food law (General Food Law Regulation).
+
+                The General Food Law Regulation is the foundation of food and feed law. It sets out an overarching and
+                coherent framework for the development of food and feed legislation both at Union and national levels.
+                To this end, it lays down general principles, requirements and procedures that underpin decision making
+                in matters of food and feed safety, covering all stages of food and feed production and distribution.
+            </p>
+
+            <p> It also sets up an independent agency responsible for scientific advice and support, the European Food
+                Safety Authority (EFSA).
+
+                Moreover, it creates the main procedures and tools for the management of emergencies and crises as well
+                as the Rapid Alert System for Food and Feed (RASFF).
+
+                The General Food Law Regulation ensures a high level of protection of human life and consumers'
+                interests in relation to food, while ensuring the effective functioning of the internal market.
+
+            </p>
+            This converter is based on:
+            <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006R1924&from=PL">Regulation
+                    (EC) No 1924/2006 of the European Parliament and of the Council</a></li>
+            <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011R1169&from=pl">Regulation
+                    (EU) No 1169/2011 of the European Parliament and of the Council</a></li>
+
+        </div>
+    </section>
+    <section id="formsPack" class=" justify-content-center align-items-center">
+        <form id="baseForm" onsubmit="return false">
+
+            <div id="formNutrution" class="container jumbotron text-center">
+                <h4>Enter data in grams per 100 g into the form</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4"><b>Carbs</b> </label>
+                        <input type="number" min="0" step="0.01" class="form-control" id="inputCarbs"
+                            placeholder="Carbs(g)" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4"><b>Sugar</b></label>
+                        <input type="number" min="0" step="0.01" class="form-control" id="inputSugar"
+                            placeholder="Sugar(g)" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4"><b>Fat</b></label>
+                        <input type="number" min="0" step="0.01" class="form-control" id="inputFat" placeholder="Fat(g)"
+                            required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4"><b>Saturated fatty acids</b></label>
+                        <input type="number" min="0" step="0.01" class="form-control" id="inputSat"
+                            placeholder="Sat. fatty acids (g)" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4"><b>Protein</b></label>
+                        <input type="number" min="0" step="0.01" class="form-control" id="inputPro"
+                            placeholder="Protein(g)" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4"><b>Salt</b></label>
+                        <input type="number" min="0" step="0.01" class="form-control" id="inputSalt" placeholder="Salt"
+                            required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div id="fiberStack" class="form-group col-md-12">
+                        <label for="inputEmail4"><b>Fiber</b></label>
+                        <input type="number" min="0" step="0.01" class="form-control" id="inputFiber"
+                            placeholder="Fiber" required>
+                    </div>
+
+
+                </div>
+                <button id="converter" class="btn btn-outline-primary centerd" type="submit">Convert</button>
+            </div>
+
+        </form>
+
+
+    </section>
+
+    <section id="result">
+        <div class="container text-center">
+            <div class="row">
+                <div class=" table-responsive-md p-3 col-sm">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">NutritionValue</th>
+                                <th scope="col">per 100 g</th>
+                                <th scope="col">RDI % per 100 g</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Energy (kcal)</th>
+                                <td id="tableKcal">0</td>
+                                <td id="perKcal">0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fat</th>
+                                <td id="tableFat">0</td>
+                                <td id="perFat">0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Saturated fatty acids</th>
+                                <td id="tableSat">0</td>
+                                <td id="perSat">0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Carbs</th>
+                                <td id="tableCarb">0</td>
+                                <td id="perCarb">0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sugars</th>
+                                <td id="tableSug">0</td>
+                                <td id="perSug">0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Portein</th>
+                                <td id="tablePro">0</td>
+                                <td id="perPro">0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fibre</th>
+                                <td id="tableFib">0</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Salt</th>
+                                <td id="tableSalt">0</td>
+                                <td id="perSalt">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm">
+                    <ul class="list-group p-3">
+                        <h3>Nutrition claims available</h3>
+                        <li hidden id="justError" class="list-group-item text-danger">Something is wrong with your's
+                            input. Check it please. Sum of nutritions can not be grater than 100. Sugars can not be
+                            greater than total carbs. Sat. fats can not be greater than total fats.
+                        </li>
+                        <li hidden id="lowEnergy" class="list-group-item text-success">LOW ENERGY</li>
+                        <li hidden id="lowFat" class="list-group-item text-success">LOW FAT</li>
+                        <li hidden id="fatFree" class="list-group-item text-success">FAT-FREE </li>
+                        <li hidden id="lowSat" class="list-group-item text-success">LOW SATURATED FAT </li>
+                        <li hidden id="freeSat" class="list-group-item text-success">SATURATED FAT-FREE</li>
+                        <li hidden id="lowSug" class="list-group-item text-success">LOW SUGARS</li>
+                        <li hidden id="freeSug" class="list-group-item text-success">SUGARS-FREE </li>
+                        <li hidden id="lowSalt" class="list-group-item text-success">LOW SODIUM/SALT </li>
+                        <li hidden id="vlowSalt" class="list-group-item text-success">VERY LOW SODIUM/SALT</li>
+                        <li hidden id="saltFree" class="list-group-item text-success">SODIUM-FREE or SALT-FREE</li>
+                        <li hidden id="fibSor" class="list-group-item text-success">SOURCE OF FIBRE </li>
+                        <li hidden id="fibHigh" class="list-group-item text-success">HIGH FIBRE</li>
+                        <li hidden id="proSor" class="list-group-item text-success">SOURCE OF PROTEIN </li>
+                        <li hidden id="proHigh" class="list-group-item text-success">HIGH PROTEIN</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="container text-center">
+            <h2 class="p-3">RDI visualization</h2>
+            <div class="progress">
+                <div id="energyBar" class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                    role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Energy
+                </div>
+            </div><br>
+            <div class="progress">
+                <div id="carbsBar" class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                    role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Carbs
+                </div>
+            </div><br>
+            <div class="progress">
+                <div id="fatBar" class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                    role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Fat
+                </div>
+            </div><br>
+            <div class="progress">
+                <div id="protBar" class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                    role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Protein
+                </div>
+            </div><br>
+            <div class="progress">
+                <div id="saltBar" class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                    role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Salt
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <button id="pdfgen" class="btn btn-outline-danger" onclick="generatePDF()">Create
+        PDF raport</button>
+
+    <footer>
+
+        <div class="text-center py-3">© 2019 Copyright: Maksym Przewoźny
+        </div>
+        <div class="text-center py-3">PDF generator mady by Erik Koopmans
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="JSscripts/scrollnav.js"></script>
+    <script src="JSscripts/engine.js"></script>
+    <script src="JSscripts/html2pdf.bundle.min.js"></script>
+    <script src="JSscripts/pdfcreator.js"></script>
+</body>
+
+</html>

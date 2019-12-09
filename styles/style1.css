@@ -1,0 +1,163 @@
+h3 {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+
+li :hover {
+    color: coral;
+}
+
+footer {
+    background-color: rgb(54, 50, 50);
+    ;
+    color: whitesmoke;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: rgba(104, 97, 97, 0.767);
+}
+
+#mainNavbar .navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background: rgba(29, 27, 29, 0.89);
+    transition: background 500ms;
+}
+
+#showcase {
+    background: url("../img/jet-engine-371412_1920.jpg") bottom center/cover no-repeat;
+    min-height: 750px;
+    position: relative;
+}
+
+#header {
+    z-index: 2;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#showcase h1 {
+    font-family: "Questrial", sans-serif;
+    line-height: 1;
+}
+
+#showcase #book {
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+
+
+
+#converter {
+    margin-top: 30px;
+}
+
+#result {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#pdfgen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+}
+
+
+@keyframes bounceInUp {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+}
+
+
+#regTextVol2 {
+    margin-bottom: 15px;
+}
+
+
+@media screen and (min-width: 601px) {
+
+    #regText,
+    #regTextVol2 {
+        font-size: 28px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+
+    #regText,
+    #regTextVol2 {
+        font-size: 16px;
+    }
+}
