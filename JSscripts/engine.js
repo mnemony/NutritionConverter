@@ -53,10 +53,12 @@ function newFunction() {
 
 
     //check any nutritional statement available    
-    if (totalSum > 100 || fatGet < satGet || carbsGet < sugarGet) {
+    if (totalSum > 100 || (satGet > fatGet) || sugarGet > carbsGet) {
         document.getElementById("justError").removeAttribute("hidden");
+
     } else {
         document.getElementById("justError").setAttribute("hidden", 'true');
+
     }
 
     if (totalKcal <= 40) {
@@ -133,7 +135,6 @@ function newFunction() {
 
     //compare protein energy value to total
     let protEnValue = (400 * (Number(proGet)).toFixed(1) / totalKcal);
-    console.log(protEnValue);
 
     if (protEnValue >= 12) {
         document.getElementById("proSor").removeAttribute("hidden");
