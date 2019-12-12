@@ -51,9 +51,15 @@ function newFunction() {
     document.getElementById("perSalt").textContent = ((Number(saltGet)).toFixed(2) / 0.06).toFixed();
 
 
+    let comFat = Number(document.getElementById("tableFat").textContent);
+    let comSat = Number(document.getElementById("tableSat").textContent);
+    let comCarb = Number(document.getElementById("tableCarb").textContent)
+    let comSug = Number(document.getElementById("tableSug").textContent)
+
+
 
     //check any nutritional statement available    
-    if (totalSum > 100 || (satGet > fatGet) || sugarGet > carbsGet) {
+    if (totalSum > 100 || comSat > comFat || sugarGet > carbsGet) {
         document.getElementById("justError").removeAttribute("hidden");
 
     } else {
