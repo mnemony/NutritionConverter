@@ -59,7 +59,7 @@ function newFunction() {
 
 
     //check any nutritional statement available    
-    if (totalSum > 100 || comSat > comFat || sugarGet > carbsGet) {
+    if (totalSum > 100 || comSat > comFat || comSug > comCarb) {
         document.getElementById("justError").removeAttribute("hidden");
 
     } else {
