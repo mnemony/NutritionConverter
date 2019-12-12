@@ -37,8 +37,8 @@ function newFunction() {
 
     document.getElementById("tableKcal").textContent = totalKcal;
 
-    let totalSum = Number(fatGet).toFixed(1) * 1 + Number(satGet).toFixed(1) * 1 +
-        (Number(carbsGet)).toFixed(1) * 1 + (Number(sugarGet)).toFixed(1) * 1 + (Number(proGet)).toFixed(1) * 1 +
+    let totalSum = (Number(fatGet)).toFixed(1) * 1 +
+        (Number(carbsGet)).toFixed(1) * 1 + (Number(proGet)).toFixed(1) * 1 +
         (Number(fiberGet)).toFixed(1) * 1 + (Number(saltGet)).toFixed(2) * 1;
 
     //calculate RDI %
