@@ -160,4 +160,14 @@ footer {
     #regTextVol2 {
         font-size: 16px;
     }
+
+    h3 {
+        font-size: medium;
+    }
+
+    .display-1 {
+        font-size: 30px;
+    }
+
+
 }
