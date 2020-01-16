@@ -9,7 +9,7 @@ Nutrition Validator based on EU food regulations v. 1.0
 - CSS + Bootstrap4
 - JavaScript
 
-+ "html2pdf" script generating PDF maet by Erik Koopmans.
++ "html2pdf" script generating PDF made by Erik Koopmans.
 
 2. Usability.
 
